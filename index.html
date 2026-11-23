@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ArcadeX — Free Online Games</title>
+  <meta name="description" content="Play free browser games instantly—no download or sign-up.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav><a class="brand" href="#"><span>◆</span> ArcadeX</a><button id="theme" aria-label="Toggle theme">☀</button></nav>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">PLAY INSTANTLY</p>
+      <h1>Free games.<br><em>Zero limits.</em></h1>
+      <p>Jump into quick browser games—no downloads, no sign-ups.</p>
+    </section>
+
+    <section class="games" id="games">
+      <article class="card" data-game="memory">
+        <div class="art purple"><span>◫</span></div>
+        <div><h2>Memory Match</h2><p>Find every matching pair</p></div>
+        <button class="play" data-game="memory">Play</button>
+      </article>
+      <article class="card" data-game="tictactoe">
+        <div class="art orange"><span>×</span></div>
+        <div><h2>Tic-Tac-Toe</h2><p>Outsmart the computer</p></div>
+        <button class="play" data-game="tictactoe">Play</button>
+      </article>
+      <article class="card" data-game="reaction">
+        <div class="art blue"><span>⚡</span></div>
+        <div><h2>Reaction Time</h2><p>Test your reflexes</p></div>
+        <button class="play" data-game="reaction">Play</button>
+      </article>
+      <article class="card" data-game="snake">
+        <div class="art green"><span>▦</span></div>
+        <div><h2>Snake</h2><p>Chase the high score</p></div>
+        <button class="play" data-game="snake">Play</button>
+      </article>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" hidden>
+    <div class="panel"><button class="close" aria-label="Close">×</button><div id="gameArea"></div></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
